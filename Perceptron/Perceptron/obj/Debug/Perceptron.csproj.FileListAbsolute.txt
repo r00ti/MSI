@@ -1,0 +1,7 @@
+C:\Users\arutkowski\source\repos\Perceptron\Perceptron\bin\Debug\Perceptron.exe.config
+C:\Users\arutkowski\source\repos\Perceptron\Perceptron\bin\Debug\Perceptron.exe
+C:\Users\arutkowski\source\repos\Perceptron\Perceptron\bin\Debug\Perceptron.pdb
+C:\Users\arutkowski\source\repos\Perceptron\Perceptron\obj\Debug\Perceptron.csprojResolveAssemblyReference.cache
+C:\Users\arutkowski\source\repos\Perceptron\Perceptron\obj\Debug\Perceptron.csproj.CoreCompileInputs.cache
+C:\Users\arutkowski\source\repos\Perceptron\Perceptron\obj\Debug\Perceptron.exe
+C:\Users\arutkowski\source\repos\Perceptron\Perceptron\obj\Debug\Perceptron.pdb
