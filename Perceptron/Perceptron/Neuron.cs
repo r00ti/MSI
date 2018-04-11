@@ -15,7 +15,7 @@ namespace Perceptron
 
         public void Uruchom()
         {
-            Console.WriteLine("Podaj ilość par");
+            Console.WriteLine("Podaj ilość danych wejściowych");
             count = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Podaj tolerancje błędu");
             error = Convert.ToDouble(Console.ReadLine());
