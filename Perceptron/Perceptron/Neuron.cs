@@ -87,9 +87,9 @@ namespace Perceptron
 
             if (count == counter)
             {
-                Console.WriteLine("KONIEC EPOKI");
+                Console.WriteLine("!--------KONIEC EPOKI--------!");
                 Console.WriteLine($"Błąd= {blad}");
-                Console.WriteLine($"Tolerancja błędu = {error}");
+                Console.WriteLine($"Tolerancja błędu = {error} \n\t");
                 blad = ObliczBlad(d, s);
                 if (blad > error)
                 {
