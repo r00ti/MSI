@@ -25,7 +25,6 @@ namespace Perceptron
             for (int q = 0; q < count; q++)
             {
                 WczytajWejscia();
-                WypiszWejscia();
                 UstawWyjscie(w);
             }
         }
@@ -45,6 +44,7 @@ namespace Perceptron
             x2 = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Podaj wartosc d");
             d = Convert.ToDouble(Console.ReadLine());
+            WypiszWejscia();
             for (int i = 0; i < 3; i++)
             {
                 Console.WriteLine($"w[{i}] = {w[i]}");
@@ -79,20 +79,18 @@ namespace Perceptron
             blad = ObliczBlad(d, s);
             if (y != d)
             {
-                w[0] = w[0] * blad;
-                w[1] = w[1] + x1 * blad;
-                w[2] = w[2] + x2 * blad;
+                w[0] = w[0] * d;
+                w[1] = w[1] + x1 * d;
+                w[2] = w[2] + x2 * d;
             }
+            Console.WriteLine($"d= {d}, y= {y}, s= {s}");
 
-            Console.WriteLine($"d= {d}");
-            Console.WriteLine($"s= {s}");
-            Console.WriteLine($"y= {y}");
-            Console.WriteLine($"blad= {blad}");
-            Console.WriteLine($"error= {error}");
-            if (y == d) Console.WriteLine("Równe");
             if (count == counter)
             {
                 Console.WriteLine("KONIEC EPOKI");
+                Console.WriteLine($"Błąd= {blad}");
+                Console.WriteLine($"Tolerancja błędu = {error}");
+                blad = ObliczBlad(d, s);
                 if (blad > error)
                 {
                     counter = 0;

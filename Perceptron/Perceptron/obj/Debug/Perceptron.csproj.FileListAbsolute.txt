@@ -5,3 +5,10 @@ C:\Users\arutkowski\source\repos\Perceptron\Perceptron\obj\Debug\Perceptron.cspr
 C:\Users\arutkowski\source\repos\Perceptron\Perceptron\obj\Debug\Perceptron.csproj.CoreCompileInputs.cache
 C:\Users\arutkowski\source\repos\Perceptron\Perceptron\obj\Debug\Perceptron.exe
 C:\Users\arutkowski\source\repos\Perceptron\Perceptron\obj\Debug\Perceptron.pdb
+D:\UCZELNIA\MSI\git\Perceptron\Perceptron\bin\Debug\Perceptron.exe.config
+D:\UCZELNIA\MSI\git\Perceptron\Perceptron\bin\Debug\Perceptron.exe
+D:\UCZELNIA\MSI\git\Perceptron\Perceptron\bin\Debug\Perceptron.pdb
+D:\UCZELNIA\MSI\git\Perceptron\Perceptron\obj\Debug\Perceptron.csprojResolveAssemblyReference.cache
+D:\UCZELNIA\MSI\git\Perceptron\Perceptron\obj\Debug\Perceptron.csproj.CoreCompileInputs.cache
+D:\UCZELNIA\MSI\git\Perceptron\Perceptron\obj\Debug\Perceptron.exe
+D:\UCZELNIA\MSI\git\Perceptron\Perceptron\obj\Debug\Perceptron.pdb
