@@ -1,5 +1,4 @@
 ﻿using System;
-
 using FANNCSharp;
 #if FANN_FIXED
 using FANNCSharp.Fixed;
@@ -11,7 +10,6 @@ using DataType = System.Double;
 using FANNCSharp.Float;
 using DataType = System.Single;
 #endif
-
 namespace XorTrain
 {
     class XorTrain
@@ -31,11 +29,11 @@ namespace XorTrain
             const float learning_rate = 0.7f;
             const uint num_layers = 3;
             const uint num_input = 900;
-            const uint num_hidden = 1;
+            const uint num_hidden = 10;
             const uint num_output = 5;
             const float desired_error = 0.001f;
-            const uint max_iterations = 100000;
-            const uint iterations_between_reports = 20000;
+            const uint max_iterations = 300000;
+            const uint iterations_between_reports = 1000;
 
             Console.WriteLine("\nCreating network.");
 
@@ -44,7 +42,7 @@ namespace XorTrain
                 net.LearningRate = learning_rate;
 
                 net.ActivationSteepnessHidden = 1.0F;
-                net.ActivationSteepnessOutput = 5.0F;
+                net.ActivationSteepnessOutput = 1.0F;
 
                 net.ActivationFunctionHidden = ActivationFunction.SIGMOID;
                 net.ActivationFunctionOutput = ActivationFunction.SIGMOID;
@@ -84,8 +82,11 @@ namespace XorTrain
                         {
                             // Run the network on the test data
                             DataType[] calc_out = net.Run(data.Input[i]);
-                            Console.WriteLine($"Symulacja: {calc_out[0]} {calc_out[1]} {calc_out[2]} {calc_out[3]} {calc_out[4]} ");
-                            Console.WriteLine($"Dane uczace: {data.OutputAccessor[(int)i][0].ToString()} {data.OutputAccessor[(int)i][1].ToString()} {data.OutputAccessor[(int)i][2].ToString()} {data.OutputAccessor[(int)i][3].ToString()} {data.OutputAccessor[(int)i][4].ToString()}");
+
+
+                            Console.WriteLine($"Symulacja: {calc_out[0]} {calc_out[1]} {calc_out[2]} {calc_out[3]} {calc_out[4]}");
+                            Console.WriteLine($"Dane uczace: {data.OutputAccessor[(int)i][0].ToString()} {data.OutputAccessor[(int)i][1].ToString()} {data.OutputAccessor[(int)i][2].ToString()} " +
+                                $"{data.OutputAccessor[(int)i][3].ToString()} {data.OutputAccessor[(int)i][4].ToString()}");
 
                             Console.WriteLine("XOR test ({0}, {1}) -> {2}, should be {3}, difference = {4}",
                                 data.InputAccessor[(int)i][0].ToString("+#;-#"),
